@@ -1,15 +1,15 @@
 {
   "fill": {
-    "solid": "display-p3:0.04314,0.13725,0.25098,1.00000"
+    "solid": "display-p3:0.00000,0.00000,0.00000,1.00000"
   },
   "groups": [
     {
       "layers": [
         {
-          "image-name": "V12Code.png",
-          "name": "V12Code",
+          "image-name": "text.svg",
+          "name": "Text",
           "position": {
-            "scale": 1,
+            "scale": 10,
             "translation-in-points": [0, 0]
           }
         }

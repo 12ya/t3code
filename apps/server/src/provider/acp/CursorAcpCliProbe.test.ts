@@ -1,5 +1,5 @@
 /**
- * Optional integration check against a real `agent acp` install.
+ * Optional integration check against a real `cursor-agent acp` install.
  * Enable with: V12CODE_CURSOR_ACP_PROBE=1 bun run test --filter CursorAcpCliProbe
  */
 import * as NodeServices from "@effect/platform-node/NodeServices";
@@ -21,7 +21,7 @@ describe.runIf(process.env.V12CODE_CURSOR_ACP_PROBE === "1")("Cursor ACP CLI pro
       Effect.provide(
         AcpSessionRuntime.layer({
           spawn: {
-            command: "agent",
+            command: "cursor-agent",
             args: ["acp"],
             cwd: process.cwd(),
           },
@@ -77,7 +77,7 @@ describe.runIf(process.env.V12CODE_CURSOR_ACP_PROBE === "1")("Cursor ACP CLI pro
         AcpSessionRuntime.layer({
           authMethodId: "cursor_login",
           spawn: {
-            command: "agent",
+            command: "cursor-agent",
             args: ["acp"],
             cwd: process.cwd(),
           },
@@ -133,7 +133,7 @@ describe.runIf(process.env.V12CODE_CURSOR_ACP_PROBE === "1")("Cursor ACP CLI pro
         AcpSessionRuntime.layer({
           authMethodId: "cursor_login",
           spawn: {
-            command: "agent",
+            command: "cursor-agent",
             args: ["acp"],
             cwd: process.cwd(),
           },
